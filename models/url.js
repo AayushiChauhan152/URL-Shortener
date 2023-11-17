@@ -9,7 +9,6 @@ const urlSchema = new mongoose.Schema(
     origURL: {
       type: String,
     },
-  { timestamps: true }
 );
 const url = new mongoose.model("url", urlSchema);
 export default url;
