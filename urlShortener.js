@@ -17,18 +17,7 @@ app.use("/", route);
 
 app.get("/url/:shortId", async (req, res) => {
   const shortId = req.params.urlId;
-  const entry = await URL.findOneAndUpdate(
-    {
-      shortId,
-    },
-    {
-      $push: {
-        visitedHistory: {
-          timestamp: Date.now(),
-        },
-      },
-    }
-  );
+  const entry = await URL.findOne({shortId});
   res.redirect(entry.origURL);
 });
 
