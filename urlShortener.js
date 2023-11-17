@@ -6,7 +6,7 @@ import URL from "./models/url.js";
 import route from "./routes/staticRoutes.js";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000 || process.env.PORT;
 database;
 
 app.set("view engine", "ejs");
