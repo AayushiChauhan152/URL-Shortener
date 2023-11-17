@@ -4,6 +4,9 @@
   "description": "",
   "main": "urlShortener.js",
   "type": "module",
+  "engines": {
+    "node": ">=16.20.1"
+  },
   "scripts": {
     "start":"node urlShortener.js"
   },
