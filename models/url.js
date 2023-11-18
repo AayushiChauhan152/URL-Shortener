@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 const urlSchema = new mongoose.Schema({
   urlId: {
     type: String,
-    unique: true,
   },
   origURL: {
     type: String,
